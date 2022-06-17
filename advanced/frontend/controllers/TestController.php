@@ -13,6 +13,9 @@ class TestController extends Controller{
 
     public function actionTesting()
     {
-        return $this->render('testing');
+        $number = 12345;
+        $name = 'Microphone';
+        $array = ['mic', 'system', 'video'];
+        return $this->render('testing', ['vNumber'=>$number, 'vName'=>$name, 'vArray'=>$array]);
     }
 }
