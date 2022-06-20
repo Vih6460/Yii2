@@ -76,6 +76,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $var1 = 'This is testing of pass';
+        $_SESSION['var2'] = 'This testing of pass using variables of session';
         return $this->render('index', ['var1'=>$var1]);
     }
 
