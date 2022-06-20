@@ -8,7 +8,8 @@ class ProductController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $menu = 'category';
+        return $this->render('index', ['menu'=>$menu]);
     }
     
     public function actionDetail()
