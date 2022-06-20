@@ -75,7 +75,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $var1 = 'This is testing of pass';
+        return $this->render('index', ['var1'=>$var1]);
     }
 
     /**
